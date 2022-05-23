@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css"/>
+    <title>Document</title>
+    </head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <a href="./" class="logo logo--header">
+                <span class="logo--accent">Web</span><span class="logo--dark">Studio</span></a>
+            <button type="button" class="menu-btn" 
+                data-menu-button 
+                aria-expanded="false"
+                aria-controls="mob-menu">
+           <svg width="40" height="40" aria-label="Переключатель меню">
+               <use class="open-menu" href="./images/icons.svg#icon-menu"></use>
+               <use class="close-menu" href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+            </button>
+       <div class="mob-menu" id="mob-menu" data-menu>
+        <nav class="mob-nav">
+            <ul class="list">
+                <li class="mob-nav__item">
+                    <a href="./index.html" class="header__link link ">Студия</a></li>
+                <li class="mob-nav__item">
+                    <a href="./portfolio.html" class="header__link link current">Портфолио</a></li>
+                <li class="mob-nav__item">
+                    <a href="" class="header__link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mob-contacts">
+            <ul class="list">
+                <li class="mob-contacts__tel">
+                    <a href="tel:+380961111111" class="header__link link">+38 096 111 11 11</a></li>
+                <li class="mob-contacts__mail">
+                        <a href="mailto:info@devstudio.com" class="header__link link">info@devstudio.com</a></li>
+                </ul>
+            </div>
+            <div class="mob-soc">
+                <ul class="mob-soc__list list">
+                    <li class="mob-soc_item"><a class="link" href="">Instagram</a></li>
+                    <li class="mob-soc_item"><a class="link" href="">Twitter</a></li>
+                    <li class="mob-soc_item"><a class="link" href="">Facebook</a></li>
+                    <li class="mob-soc_item"><a class="link" href="">LinkedIn</a></li>
+                </ul>
+                
+            </div>
+       </div>
+        <nav class="menu">
+            <ul class="list">
+                <li class="menu__item">
+                    <a href="./index.html" class="header__link link">Студия</a></li>
+                <li class="menu__item">
+                    <a href="./portfolio.html" class="header__link link current">Портфолио</a></li>
+                <li class="menu__item">
+                    <a href="" class="header__link link">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <ul class="list">
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="header__link link"><svg class="contacts__icon" width="16" height="12"><use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+                <li class="contacts__item">
+                    <a href="tel:+380961111111" class="header__link link"><svg class="contacts__icon" width="10" height="16"><use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <main>  
+    <section class="portfolio">
+      <div class="container">
+        <h1 class="visually-hidden">Портфолио</h1>
+        <ul class="filters list">
+             <li><button type="button" class="filters__button">Все</button></li>
+             <li><button type="button" class="filters__button">Веб-сайты</button></li>
+             <li><button type="button" class="filters__button">Приложения</button></li>
+             <li><button type="button" class="filters__button">Дизайн</button></li>
+             <li><button type="button" class="filters__button">Маркетинг</button></li>
+        </ul>
+        <h2 class="visually-hidden">Галерея работ</h2>
+        <ul class="porfolio__list list">
+            <li>
+                    <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                    <picture>
+                            <source srcset="./images/portfolio/techno-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/techno-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/techno-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/techno-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/techno-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/techno-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/techno-mob-x1-min.jpg" alt="Техно">
+                         </picture>
+                    <p class="portfolio__slide">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p></div>
+                    <div class="portfolio__info tech">
+                     <h3 class="portfolio__title">Технокряк</h3>
+                    <p class="porfolio__text">Веб-сайт</p>
+                    </div>
+                    </div>
+            </li>
+            <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/poster-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/poster-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/poster-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/poster-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/poster-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/poster-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/poster-mob-x1-min.jpg" alt="Постер">
+                         </picture>            
+                        <p class="portfolio__slide"></p>
+                </div>
+                    <div class="portfolio__info">
+                 <h3 class="portfolio__title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                 <p class="porfolio__text">Дизайн</p>
+                 </div>
+                </div>
+             </li>
+             <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/restaurant-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/restaurant-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/restaurant-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/restaurant-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/restaurant-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/restaurant-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/restaurant-mob-x1-min.jpg" alt="Рыбный ресторан">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                 <div class="portfolio__info">
+                     <h3 class="portfolio__title">Ресторан <span lang="en">Seafood</span></h3>
+                 <p class="porfolio__text">Приложение</p>
+                 </div>
+                 </div>   
+             </li>
+             <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/prime-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/prime-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/prime-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/prime-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/prime-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/prime-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/prime-mob-x1-min.jpg" alt="Прайм">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                 <div class="portfolio__info">
+                     <h3 class="portfolio__title">Проект <span lang="en">Prime</span></h3>
+                 <p class="porfolio__text">Маркетинг</p>
+                 </div>
+                 </div>
+             </li>
+             <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/boxes-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/boxes-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/boxes-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/boxes-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/boxes-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/boxes-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/boxes-mob-x1-min.jpg" alt="Коробки">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                <div class="portfolio__info">
+                     <h3 class="portfolio__title">Проект <span lang="en">Boxes</span></h3>
+                 <p class="porfolio__text">Приложение</p>
+                 </div>
+                 </div>
+              </li>
+              <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/inspiration-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/inspiration-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/inspiration-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/inspiration-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/inspiration-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/inspiration-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/inspiration-mob-x1-min.jpg" alt="Вдохновение">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                <div class="portfolio__info">
+                 <h3 class="portfolio__title"><span lang="en">Inspiration has no Borders</span></h3>
+                 <p class="porfolio__text">Веб-сайт</p>
+                 </div>
+                </div>    
+                </li>
+                <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/limited-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/limited-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/limited-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/limited-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/limited-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/limited-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/limited-mob-x1-min.jpg" alt="Лимитед">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                <div class="portfolio__info">
+                     <h3 class="portfolio__title">Издание <span lang="en">Limited Edition</span></h3>
+                 <p class="porfolio__text">Дизайн</p>
+                 </div>
+                </div>
+                </li>
+                <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/lab-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/lab-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/lab-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/lab-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/lab-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/lab-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/lab-mob-x1-min.jpg" alt="Лейбл">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                <div class="portfolio__info">
+                     <h3 class="portfolio__title">Проект <span lang="en">LAB</span></h3>
+                 <p class="porfolio__text">Маркетинг</p>
+                 </div>
+                </div>
+                </li>
+                <li>
+                <div class="portfolio__card">
+                    <div class="portfolio__thumb">
+                        <picture>
+                            <source srcset="./images/portfolio/business-desk-x1-min.jpg 1x, 
+                            ./images/portfolio/business-desk-x2-min.jpg 2x" 
+                            media="(min-width:1200px)">
+                            <source srcset="./images/portfolio/business-tab-x1-min.jpg 1x, 
+                            ./images/portfolio/business-tab-x2-min.jpg  2x" 
+                            media="(min-width:768px)">
+                            <source srcset="./images/portfolio/business-mob-x1-min.jpg 1x, 
+                            ./images/portfolio/business-mob-x2-min.jpg 2x" 
+                            media="(min-width:320px)">
+                            <img src="./images/portfolio/business-mob-x1-min.jpg" alt="Бизнес">
+                         </picture>  
+                    <p class="portfolio__slide"></p></div>
+                <div class="portfolio__info ">
+                     <h3 class="portfolio__title"><span lang="en">Growing Business</span></h3>
+                 <p class="porfolio__text">Приложение</p>
+                 </div>
+                </div>
+              </li>
+        </ul>
+      </div>
+    </section>
+    </main>
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <a href="./" class="logo logo--footer"><span class="logo--accent">Web</span><span class="logo--light">Studio</span></a>
+                <address class="address">
+                <ul class="address__list list">
+                    <li class="address__map"><a href="https://goo.gl/maps/3kTh9h1PQYDEGtS97" target="_blank" rel="noopener, nofollow, noindex" class="link footer-link">г. Киев, пр-т Леси Украинки, 26</a> </li>
+                    <li class="address__text"><a href="mailto:info@devstudio.com" class="link footer-link">info@devstudio.com</a></li>
+                    <li class="address__text"><a href="tel:+380961111111" class="link footer-link">+38 096 111 11 11</a></li>
+                </ul>
+                </address>
+            </div>
+            <div class="join">
+            <h1 class="join__title">присоединяйтесь</h1>
+                <ul class="list join__list">
+                    <li><a class="join__item" href=""><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#icon-instagram"></use></svg></a></li>
+                    <li><a class="join__item" href=""><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#icon-twitter"></use></svg></a></li>
+                    <li><a class="join__item" href=""><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use></svg></a></li>
+                    <li><a class="join__item" href=""><svg class="join__icon" width="20" height="20"><use href="./images/icons.svg#icon-linkedin"></use></svg></a></li>
+                </ul>
+           </div>
+         <div class="subscribe">
+                    <h1 class="subscribe__title">подпишитесь на рассылку</h1>
+                    <form class="subscribe__form">
+                        <label>
+      <input type="email" name="email" placeholder="E-mail" class="subscribe__input">
+  </label> <button type="submit" class="subscribe__button">Подписаться <svg class="subscribe__icon" width="24" height="24" ><use href="./images/icons.svg#icon-send"></use></svg></button>
+                    </form>
+                </div>
+        </div>
+            </footer>
+            <script src="./js/mobile-menu.js"></script>
+</body>
+</html>
