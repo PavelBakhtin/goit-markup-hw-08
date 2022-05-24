@@ -30,6 +30,9 @@
    font-weight: 400;
    font-size: 14px;
    line-height: 1.71;
+   @media screen and (min-width:1200px) {
+    margin-bottom: 0;
+   }
  }
  .address__list li:not(:last-child) {
    margin-bottom: 9px;
@@ -52,7 +55,7 @@
   @media screen and (min-width:1200px) {
    
     margin-top: 12px;
-    margin-left: auto;
+    margin-left: 70px;
     margin-bottom: 0;
     }
   
@@ -101,12 +104,12 @@
  
  
  .subscribe {
-  @media screen and (min-width:768px) {
+  @media screen and (min-width:768px) and (max-width:1199px) {
     margin: 0 auto;
   }
   @media screen and (min-width:1200px) {
    margin-top: 12px;
-   margin-left: 93px;
+   margin-left: auto;
   }
  }
 

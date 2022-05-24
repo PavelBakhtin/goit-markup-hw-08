@@ -12,8 +12,8 @@
       background-position: 50% 50%;
       background-size:cover;
       padding-top: 118px;
-    padding-bottom: 118px;
-      @media screen and (min-width:576px){
+      padding-bottom: 118px;
+      @media screen and (min-width:760px){
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-tab-x1-min.jpg);
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -21,7 +21,7 @@
           
         }
       }
-      @media screen and (min-width:960px) {
+      @media screen and (min-width:1200px) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/Header-desk-x1-min.jpg);
       max-width: 1600px;
       padding-top: 200px;
