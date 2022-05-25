@@ -1,6 +1,11 @@
 (() => {
   const menuBtnRef = document.querySelector("[data-menu-button]");
   const mobileMenuRef = document.querySelector("[data-menu]");
+  const btn = document.querySelector('[btn]');
+
+  btn.addEventListener('click', function onClick(event) {
+    document.body.classList.toggle('overflow');
+  });
 
   menuBtnRef.addEventListener("click", () =>  {
     const expanded =
